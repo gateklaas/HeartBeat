@@ -1,5 +1,6 @@
 Heart-Beat app
 ===========
+A Music Player That Improves Your Workout
 
 ### Project details ###
 
