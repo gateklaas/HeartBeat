@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.heart_beat"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.google.http-client:google-http-client-jackson2:1.20.0'
+    compile 'com.google.apis:google-api-services-plus:v1-rev274-1.20.0'
+    compile 'com.mpatric:mp3agic:0.8.3'
+    compile 'com.github.haifengl:smile-core:1.0.3'
+    compile 'com.github.haifengl:smile-data:1.0.3'
+    compile 'com.github.haifengl:smile-math:1.0.3'
+}
